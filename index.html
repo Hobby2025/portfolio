@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>포트폴리오</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" id="navLogo"></a>
+      <ul class="nav__links" id="navLinks"></ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul id="mobileMenuLinks"></ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-text" id="heroBgText" aria-hidden="true"></div>
+    <div class="hero__content" id="heroContent"></div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label" id="aboutLabel"></div>
+      <div class="about__grid">
+        <div class="about__text" id="aboutText"></div>
+        <div class="about__visual" id="aboutVisual"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-label" id="workLabel"></div>
+      <h2 class="section-title" id="workTitle"></h2>
+      <div class="work__grid" id="workGrid"></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-label" id="skillsLabel"></div>
+      <h2 class="section-title" id="skillsTitle"></h2>
+      <div class="skills__grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label" id="contactLabel"></div>
+      <div class="contact__inner" id="contactInner"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <span id="footerLeft"></span>
+      <span id="footerRight"></span>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal">
+      <button class="modal__close" id="modalClose" aria-label="닫기">✕</button>
+      <div class="modal__header">
+        <div class="modal__meta">
+          <span class="modal__year" id="modalYear"></span>
+          <span class="project-card__tag" id="modalTag"></span>
+        </div>
+        <h2 class="modal__title" id="modalTitle"></h2>
+        <p class="modal__summary" id="modalSummary"></p>
+      </div>
+      <div class="modal__body">
+        <div class="modal__section">
+          <h3 class="modal__section-title">담당 업무</h3>
+          <ul class="modal__list" id="modalTasks"></ul>
+        </div>
+        <div class="modal__section">
+          <h3 class="modal__section-title">주요 성과</h3>
+          <ul class="modal__list modal__list--highlight" id="modalResults"></ul>
+        </div>
+        <div class="modal__image-wrap" id="modalImageWrap"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
